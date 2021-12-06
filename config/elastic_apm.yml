@@ -8,7 +8,7 @@ service_name: <%= ENV.fetch('ELASTIC_APM_SERVICE_NAME') { 'spree' } %>
 #secret_token: ''
 
 # Set the custom APM Server URL (default: http://localhost:8200)
-server_url: <%= ENV.fetch('ELASTIC_APM_SERVICE_URL') { 'http://localhost:9000' } %>
+server_url: <%= ENV.fetch('ELASTIC_APM_SERVICE_URL') { 'http://localhost:9200' } %>
 
 # Set the service environment
 environment: <%= ENV.fetch('ELASTIC_APM_ENVIRONMENT') { 'production' } %>
