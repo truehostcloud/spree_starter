@@ -47,6 +47,8 @@ ENV RAILS_LOG_TO_STDOUT 1
 
 RUN SECRET_KEY_BASE=skb DB_ADAPTER=nulldb bundle exec rails assets:precompile
 
+RUN mkdir tmp/pids
+
 RUN chmod +x entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
 
