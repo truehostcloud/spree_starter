@@ -5,6 +5,43 @@ GIT
     sassc (2.4.0)
       ffi (~> 1.9)
 
+GIT
+  remote: https://github.com/spree/spree_legacy_frontend
+  revision: a8ae3f5e5fd27e17477d9e38eb5f212a63c8dc2d
+  branch: main
+  specs:
+    spree_frontend (4.4.0.alpha)
+      babel-transpiler (~> 0.7)
+      bootstrap (~> 4.0)
+      canonical-rails (~> 0.2, >= 0.2.10)
+      glyphicons (~> 1.0)
+      inline_svg (~> 1.5)
+      jquery-rails (~> 4.3)
+      responders
+      sass-rails (>= 5)
+      spree_api (>= 4.4.0.alpha)
+      spree_core (>= 4.4.0.alpha)
+      sprockets (~> 4.0)
+      turbolinks (~> 5.2)
+
+GIT
+  remote: https://github.com/truehostcloud/spree-autologin
+  revision: e62d7bd67bcab3398072bdad696d9ceffe999872
+  branch: dev
+  specs:
+    spree_autologin (0.0.1)
+      spree (>= 4.3.0)
+      spree_extension
+
+GIT
+  remote: https://github.com/truehostcloud/spree-clone-store
+  revision: f97982a862620d8674d8a761e3e7aa90d87d525f
+  branch: dev
+  specs:
+    spree_clone_store (0.0.1)
+      spree (>= 4.3.0)
+      spree_extension
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -145,6 +182,8 @@ GEM
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
     cancancan (3.3.0)
+    canonical-rails (0.2.13)
+      rails (>= 4.1, <= 7.0)
     capybara (3.36.0)
       addressable
       matrix
@@ -176,6 +215,11 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
+    deface (1.8.1)
+      nokogiri (>= 1.6)
+      polyglot
+      rails (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.8.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -186,12 +230,17 @@ GEM
       devise (>= 2.1.0)
     diff-lcs (1.4.4)
     docile (1.4.0)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
     doorkeeper (5.5.4)
       railties (>= 5)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
       dotenv (= 2.7.6)
       railties (>= 3.2)
+    elastic-apm (4.5.0)
+      concurrent-ruby (~> 1.0)
+      http (>= 3.0)
     erubi (1.10.0)
     execjs (2.8.1)
     factory_bot (4.11.1)
@@ -219,6 +268,9 @@ GEM
     faraday-rack (1.0.0)
     ffaker (2.20.0)
     ffi (1.15.4)
+    ffi-compiler (1.0.1)
+      ffi (>= 1.0.0)
+      rake
     fiber-local (1.0.0)
     flamegraph (0.9.5)
     flatpickr (4.6.6.0)
@@ -245,6 +297,14 @@ GEM
       rails (>= 6.0.0)
       stimulus-rails
       turbo-rails
+    http (5.0.4)
+      addressable (~> 2.8)
+      http-cookie (~> 1.0)
+      http-form_data (~> 2.2)
+      llhttp-ffi (~> 0.4.0)
+    http-cookie (1.0.4)
+      domain_name (~> 0.5)
+    http-form_data (2.3.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     i18n_data (0.13.1)
@@ -290,6 +350,9 @@ GEM
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    llhttp-ffi (0.4.0)
+      ffi-compiler (~> 1.0)
+      rake (~> 13.0)
     loofah (2.12.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -326,6 +389,7 @@ GEM
     parser (3.0.3.1)
       ast (~> 2.4.1)
     pg (1.2.3)
+    polyglot (0.3.5)
     popper_js (1.16.0)
     protocol-hpack (1.4.2)
     protocol-http (0.22.5)
@@ -595,6 +659,12 @@ GEM
       rails-i18n
       spree_core (>= 4.2.0.rc3, < 5.0)
       spree_extension
+    spree_multi_vendor (2.3.0)
+      deface (~> 1.0)
+      spree (>= 4.3.0.rc1)
+      spree_backend (>= 4.3.0.rc1)
+      spree_emails (>= 4.3.0.rc1)
+      spree_extension
     spree_sample (4.4.0.rc1)
       ffaker (~> 2.9)
       spree_core (>= 4.4.0.rc1)
@@ -629,8 +699,14 @@ GEM
       railties (>= 3.1.1)
     turbo-rails (0.9.0)
       rails (>= 6.0.0)
+    turbolinks (5.2.1)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.8)
     unicode-display_width (2.1.0)
     uniform_notifier (1.14.2)
     validates_zipcode (0.5.0)
@@ -669,11 +745,13 @@ DEPENDENCIES
   bullet
   dalli
   dotenv-rails (~> 2.1, >= 2.1.1)
+  elastic-apm
   flamegraph
   font_assets
   letter_opener
   listen
   memory_profiler
+  mysql2 (~> 0.5.3)
   oj
   pg
   puma
@@ -692,11 +770,15 @@ DEPENDENCIES
   sidekiq
   spree (>= 4.4.0.rc1)
   spree_auth_devise
+  spree_autologin!
   spree_backend (>= 4.4.0.rc1)
+  spree_clone_store!
   spree_dev_tools
   spree_emails (>= 4.4.0.rc1)
+  spree_frontend!
   spree_gateway
   spree_i18n (>= 5.0)
+  spree_multi_vendor
   spree_sample (>= 4.4.0.rc1)
   spring
   stackprof
