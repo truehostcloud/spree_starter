@@ -2,13 +2,13 @@
 
 # Set the service name - allowed characters: a-z, A-Z, 0-9, -, _ and space
 # Defaults to the name of your Rails app
-service_name: <%= ENV.fetch('ELASTIC_APM_SERVICE_NAME') %>
+service_name: <%= ENV.fetch('ELASTIC_APM_SERVICE_NAME') { 'spree' } %>
 
 # Use if APM Server requires a secret token
 #secret_token: ''
 
 # Set the custom APM Server URL (default: http://localhost:8200)
-server_url: <%= ENV.fetch('ELASTIC_APM_SERVICE_URL') %>
+server_url: <%= ENV.fetch('ELASTIC_APM_SERVICE_URL') { 'http://localhost:9000' } %>
 
 # Set the service environment
-environment: <%= ENV.fetch('ELASTIC_APM_ENVIRONMENT') %>
+environment: <%= ENV.fetch('ELASTIC_APM_ENVIRONMENT') { 'production' } %>
