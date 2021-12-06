@@ -6,6 +6,8 @@ ruby '3.0.2'
 gem 'rails', '~> 6.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg'
+# install mysql
+gem 'mysql2', '~> 0.5.3'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -82,6 +84,9 @@ gem 'spree_dev_tools', require: false, group: %w[test development]
 
 # Sentry Client
 gem 'sentry-raven'
+
+# elastic apm
+gem 'elastic-apm'
 
 # Scout Client
 gem 'scout_apm'
