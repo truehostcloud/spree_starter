@@ -77,6 +77,10 @@ gem 'spree', spree_opts
 gem 'spree_sample', spree_opts
 gem 'spree_emails', spree_opts
 gem 'spree_backend', spree_opts
+gem 'spree_frontend', git: 'https://github.com/spree/spree_legacy_frontend', branch: 'main'
+gem 'spree_clone_store', git: 'https://github.com/truehostcloud/spree-clone-store', branch: 'dev'
+gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', branch: 'dev'
+gem 'spree_multi_vendor'
 gem 'spree_gateway'
 gem 'spree_auth_devise'
 gem 'spree_i18n', '>= 5.0'
