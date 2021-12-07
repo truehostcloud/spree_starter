@@ -41,6 +41,8 @@ RUN bundle install --binstubs --without development test
 
 COPY . .
 
+RUN find /bundle/ruby/ -name "plp.svg" -execdir cp /app/assets/images/noimage/plp.svg {} \;
+
 ENV RAILS_ENV production
 ENV RAILS_SERVE_STATIC_FILES 1
 ENV RAILS_LOG_TO_STDOUT 1
