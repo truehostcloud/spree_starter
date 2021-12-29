@@ -73,10 +73,10 @@ gem 'sidekiq'
 
 # Spree gems
 spree_opts = '>= 4.4.0.rc1'
-gem 'spree', spree_opts
+gem 'spree', git: 'https://github.com/spree/spree', branch: 'main'
 gem 'spree_sample', spree_opts
 gem 'spree_emails', spree_opts
-gem 'spree_backend', spree_opts
+gem 'spree_backend', git: 'https://github.com/spree/spree_backend', branch: 'main'
 gem 'spree_frontend', git: 'https://github.com/spree/spree_legacy_frontend', branch: 'main'
 gem 'spree_clone_store', git: 'https://github.com/truehostcloud/spree-clone-store', branch: 'dev'
 gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', branch: 'dev'
