@@ -65,28 +65,6 @@ GIT
       validates_zipcode
 
 GIT
-  remote: https://github.com/spree/spree_backend
-  revision: b357fa9f0af3b65101417740b6533d733e5630e2
-  branch: main
-  specs:
-    spree_backend (5.0.0.alpha)
-      babel-transpiler (~> 0.7)
-      bootstrap (~> 4.0)
-      flatpickr (~> 4.6)
-      glyphicons (~> 1.0)
-      hotwire-rails
-      inline_svg (~> 1.5)
-      jquery-rails (~> 4.3)
-      jquery-ui-rails (~> 6.0)
-      jsbundling-rails
-      responders
-      sass-rails (>= 5)
-      select2-rails (~> 4.0)
-      spree (>= 4.4.0.rc1)
-      sprockets (~> 4.0)
-      tinymce-rails
-
-GIT
   remote: https://github.com/spree/spree_legacy_frontend
   revision: a8ae3f5e5fd27e17477d9e38eb5f212a63c8dc2d
   branch: main
@@ -643,6 +621,22 @@ GEM
       devise-encryptable (= 0.2.0)
       spree_core (>= 4.3.0.rc1)
       spree_extension
+    spree_backend (4.4.0.rc1)
+      babel-transpiler (~> 0.7)
+      bootstrap (~> 4.0)
+      flatpickr (~> 4.6)
+      glyphicons (~> 1.0)
+      hotwire-rails
+      inline_svg (~> 1.5)
+      jquery-rails (~> 4.3)
+      jquery-ui-rails (~> 6.0)
+      jsbundling-rails
+      responders
+      sass-rails (>= 5)
+      select2-rails (~> 4.0)
+      spree (>= 4.4.0.rc1)
+      sprockets (~> 4.0)
+      tinymce-rails
     spree_dev_tools (0.1.12)
       appraisal
       awesome_print
@@ -797,7 +791,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise
   spree_autologin!
-  spree_backend!
+  spree_backend (>= 4.4.0.rc1)
   spree_clone_store!
   spree_dev_tools
   spree_emails (>= 4.4.0.rc1)
