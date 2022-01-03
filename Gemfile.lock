@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/spree-contrib/spree_multi_vendor
-  revision: 8e0b3858daf0ba621d0958d42d6f813522510ccd
+  revision: 78c233ad7f55a9eee2620b405861e5cd07307e9f
   branch: main
   specs:
     spree_multi_vendor (2.3.0)
