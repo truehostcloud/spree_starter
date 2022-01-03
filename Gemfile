@@ -73,7 +73,7 @@ gem 'sidekiq'
 
 # Spree gems
 spree_opts = '>= 4.4.0.rc1'
-gem 'spree', git: 'https://github.com/spree/spree', branch: 'main'
+gem 'spree', spree_opts
 gem 'spree_sample', spree_opts
 gem 'spree_emails', spree_opts
 gem 'spree_backend', spree_opts
