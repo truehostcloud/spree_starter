@@ -58,8 +58,8 @@ Rails.application.configure do
   config.assets.debug = ENV.fetch('DEBUG_ASSETS', false)
 
   # configure logging
-  # config.logger = Logger.new(STDOUT)
-  # config.log_level = ENV.fetch("LOG_LEVEL", "INFO")
+  config.logger = Logger.new(STDOUT)
+  config.log_level = ENV.fetch("LOG_LEVEL", "INFO")
 
   # Suppress logger output for asset requests.
   config.assets.quiet = true
