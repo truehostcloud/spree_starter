@@ -44,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree-startup-wizard
-  revision: 43daf0ef68d140e7979f825f16e71cc0502500f5
+  revision: efe45dbfafb122c97b2b1f33c505a540c8bcfc31
   branch: dev
   specs:
     spree_startup_wizard (0.0.1)
