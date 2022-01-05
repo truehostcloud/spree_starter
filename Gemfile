@@ -102,6 +102,9 @@ gem 'rack-cors'
 # SendGrid
 gem 'sendgrid-actionmailer'
 
+#mailgun
+gem 'mailgun-ruby', '~>1.2.5'
+
 # logging
 gem 'remote_syslog_logger'
 

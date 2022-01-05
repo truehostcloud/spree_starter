@@ -146,6 +146,15 @@ Rails.application.configure do
     }
   end
 
+  # mailgun mail
+  if ENV['MAILGUN_API_KEY'].present?
+    config.action_mailer.delivery_method = :mailgun
+    config.action_mailer.mailgun_settings = {
+      api_key: ENV['MAILGUN_API_KEY'],
+      domain: ENV['MAILGUN_DOMAIN']
+    }
+  end
+
   # fix for fonts CORS issues with CloudFront
   config.font_assets.origin = '*'
   # Do not dump schema after migrations.

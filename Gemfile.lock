@@ -52,6 +52,7 @@ GIT
       spree (>= 4.3.0)
       spree_backend (>= 4.3.0)
       spree_extension
+      spree_multi_vendor
 
 GIT
   remote: https://github.com/truehostcloud/spree_multi_vendor
@@ -325,6 +326,7 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 2.2)
       llhttp-ffi (~> 0.4.0)
+    http-accept (1.7.0)
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
@@ -382,10 +384,15 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
+    mailgun-ruby (1.2.5)
+      rest-client (>= 2.0.2)
     marcel (1.0.2)
     matrix (0.4.2)
     memory_profiler (1.0.0)
     method_source (1.0.0)
+    mime-types (3.4.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2021.1115)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
@@ -397,6 +404,7 @@ GEM
     multi_json (1.15.0)
     multipart-post (2.1.1)
     mysql2 (0.5.3)
+    netrc (0.11.0)
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
@@ -488,6 +496,11 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 4.0)
+      netrc (~> 0.8)
     rexml (3.2.5)
     rspec-activemodel-mocks (1.1.0)
       activemodel (>= 3.0)
@@ -769,6 +782,7 @@ DEPENDENCIES
   font_assets
   letter_opener
   listen
+  mailgun-ruby (~> 1.2.5)
   memory_profiler
   mysql2 (~> 0.5.3)
   oj
