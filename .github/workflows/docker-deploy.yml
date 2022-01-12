@@ -28,6 +28,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           push: true
+          file: Dockerfile.production
           tags: truehostcloud/spree-commerce:4.4.0.${{steps.vars.outputs.tag}}-prod
           cache-from: type=registry,ref=truehostcloud/spree-commerce:4.4.0.${{steps.vars.outputs.previous-tag}}-prod
           cache-to: type=inline
