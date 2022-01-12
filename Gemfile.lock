@@ -35,8 +35,8 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree-clone-store
-  revision: a38cfd817b0db4cd445d05ac8d9577a4038abf1e
-  branch: dev
+  revision: 7007e688c4c35a07725486e8e64bbc88902d1125
+  tag: v1.0.0
   specs:
     spree_clone_store (0.0.1)
       spree (>= 4.3.0)
