@@ -72,11 +72,11 @@ gem 'rack-cache' # http caching
 gem 'sidekiq'
 
 # Spree gems
-spree_opts = '>= 4.4.0.rc1'
+spree_opts = '>= 4.4.0'
 gem 'spree', spree_opts
 gem 'spree_sample', spree_opts
 gem 'spree_emails', spree_opts
-gem 'spree_backend', spree_opts
+gem 'spree_backend', git: 'https://github.com/willymwai/spree_backend', branch: '4-4-stable'
 gem 'spree_frontend', git: 'https://github.com/spree/spree_legacy_frontend', branch: 'main'
 gem 'spree_clone_store', git: 'https://github.com/truehostcloud/spree-clone-store', tag: 'v1.1.1'
 gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', branch: 'dev'
