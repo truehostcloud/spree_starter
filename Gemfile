@@ -82,6 +82,8 @@ gem 'spree_clone_store', git: 'https://github.com/truehostcloud/spree-clone-stor
 gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', branch: 'dev'
 gem 'spree_startup_wizard', git: 'https://github.com/truehostcloud/spree-startup-wizard', branch: 'dev'
 gem 'spree_multi_vendor', git: 'https://github.com/truehostcloud/spree_multi_vendor', branch: 'main'
+gem 'flutterwave_sdk', github: 'Flutterwave/Flutterwave-Ruby-v3', branch: 'master'
+gem 'spree_flutterwave', github: 'truehostcloud/spree_flutterwave', branch: 'dev'
 gem 'spree_gateway'
 gem 'spree_auth_devise'
 gem 'spree_i18n', '>= 5.0'
