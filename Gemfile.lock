@@ -1,4 +1,11 @@
 GIT
+  remote: https://github.com/Flutterwave/Flutterwave-Ruby-v3.git
+  revision: b8ca534107d2daaac28a19327f345da444ab3805
+  branch: master
+  specs:
+    flutterwave_sdk (0.1.0)
+
+GIT
   remote: https://github.com/sass/sassc-ruby.git
   revision: 4fce2b635ca5d616a8b1381c64846410bc785ea4
   specs:
@@ -53,6 +60,18 @@ GIT
       spree_backend (>= 4.3.0)
       spree_extension
       spree_multi_vendor
+
+GIT
+  remote: https://github.com/truehostcloud/spree_flutterwave.git
+  revision: 815fa75c146b97907de2266239b608b5f86e2601
+  branch: dev
+  specs:
+    spree_flutterwave (0.0.1)
+      flutterwave_sdk
+      httparty
+      spree (>= 4.4.0)
+      spree_backend (>= 4.4.0)
+      spree_extension
 
 GIT
   remote: https://github.com/truehostcloud/spree_multi_vendor
@@ -352,6 +371,9 @@ GEM
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
+    httparty (0.20.0)
+      mime-types (~> 3.0)
+      multi_xml (>= 0.5.2)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     i18n_data (0.15.0)
@@ -424,6 +446,7 @@ GEM
       i18n (>= 0.6.4, <= 2)
     msgpack (1.4.2)
     multi_json (1.15.0)
+    multi_xml (0.6.0)
     multipart-post (2.1.1)
     mysql2 (0.5.3)
     netrc (0.11.0)
@@ -785,6 +808,7 @@ DEPENDENCIES
   dotenv-rails (~> 2.1, >= 2.1.1)
   elastic-apm
   flamegraph
+  flutterwave_sdk!
   font_assets
   letter_opener
   listen
@@ -814,6 +838,7 @@ DEPENDENCIES
   spree_clone_store!
   spree_dev_tools
   spree_emails (>= 4.4.0)
+  spree_flutterwave!
   spree_frontend!
   spree_gateway
   spree_i18n (>= 5.0)
