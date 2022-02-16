@@ -80,7 +80,7 @@ gem 'spree_backend', git: 'https://github.com/willymwai/spree_backend', branch: 
 gem 'spree_frontend', git: 'https://github.com/spree/spree_legacy_frontend', branch: 'main'
 gem 'spree_clone_store', git: 'https://github.com/truehostcloud/spree-clone-store', tag: 'v1.1.1'
 gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', branch: 'dev'
-gem 'spree_startup_wizard', git: 'https://github.com/truehostcloud/spree-startup-wizard', branch: 'dev'
+# gem 'spree_startup_wizard', git: 'https://github.com/truehostcloud/spree-startup-wizard', branch: 'dev'
 gem 'spree_multi_vendor', git: 'https://github.com/truehostcloud/spree_multi_vendor', branch: 'main'
 gem 'spree_gateway'
 gem 'flutterwave_sdk', github: 'Flutterwave/Flutterwave-Ruby-v3', branch: 'master'
