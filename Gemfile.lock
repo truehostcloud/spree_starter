@@ -63,7 +63,7 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree_fx_currency.git
-  revision: 5be5fedc8d59ef94b72d8ef001a94fb5da1aabe6
+  revision: 35e5d7b8c02b12d3bc0d6fb6cc87df444849dbab
   branch: dev
   specs:
     spree_fx_currency (3.1.0)
