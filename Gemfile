@@ -88,6 +88,7 @@ gem 'spree_flutterwave', github: 'truehostcloud/spree_flutterwave', branch: 'dev
 gem 'spree_auth_devise'
 gem 'spree_i18n', '>= 5.0'
 gem 'spree_dev_tools', require: false, group: %w[test development]
+gem 'spree_fx_currency', github: 'truehostcloud/spree_fx_currency', branch: 'dev', tag: 'v4.0.0'
 
 # Sentry Client
 gem 'sentry-raven'

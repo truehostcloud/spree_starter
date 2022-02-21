@@ -62,6 +62,16 @@ GIT
       spree_extension
 
 GIT
+  remote: https://github.com/truehostcloud/spree_fx_currency.git
+  revision: 0af37d0311b9926348ebd86fccd0d570a6cda0c9
+  branch: dev
+  tag: v4.0.0
+  specs:
+    spree_fx_currency (4.0.0)
+      spree (>= 4.4.0)
+      spree_backend (>= 4.4.0)
+
+GIT
   remote: https://github.com/truehostcloud/spree_multi_vendor
   revision: 0c8010e9184b4dbdbcd910f1207c58d8a74f7d9b
   branch: main
@@ -828,6 +838,7 @@ DEPENDENCIES
   spree_emails (>= 4.4.0)
   spree_flutterwave!
   spree_frontend!
+  spree_fx_currency!
   spree_gateway
   spree_i18n (>= 5.0)
   spree_multi_vendor!
