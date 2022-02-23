@@ -33,7 +33,7 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree-autologin
-  revision: e62d7bd67bcab3398072bdad696d9ceffe999872
+  revision: c66b1fcbc96fbcde348a228179d5bdb2105905b8
   branch: dev
   specs:
     spree_autologin (0.0.1)
