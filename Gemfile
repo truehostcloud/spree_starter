@@ -83,7 +83,7 @@ gem 'spree_autologin', git: 'https://github.com/truehostcloud/spree-autologin', 
 gem 'spree_multi_vendor', git: 'https://github.com/truehostcloud/spree_multi_vendor', branch: 'main'
 gem 'spree_gateway'
 gem 'flutterwave_sdk', github: 'Flutterwave/Flutterwave-Ruby-v3', branch: 'master'
-gem 'spree_flutterwave', github: 'truehostcloud/spree_flutterwave', branch: 'dev'
+gem 'spree_flutterwave', github: 'truehostcloud/spree_flutterwave', tag: 'v0.0.5'
 gem 'spree_auth_devise'
 gem 'spree_i18n', '>= 5.0'
 gem 'spree_dev_tools', require: false, group: %w[test development]
