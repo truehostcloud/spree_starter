@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/Flutterwave/Flutterwave-Ruby-v3.git
-  revision: a908837e15b6a93e19b1c5bccbfe3c51713ea98a
+  revision: d40f82cfe524ba9d0eff9ab6071f272ce6b05b51
   branch: master
   specs:
-    flutterwave_sdk (0.1.0)
+    flutterwave_sdk (0.1.1)
 
 GIT
   remote: https://github.com/sass/sassc-ruby.git
@@ -51,10 +51,10 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree_flutterwave.git
-  revision: be8e310df3fa031118a6167730f7abcb84e7ae74
-  tag: v0.0.5
+  revision: 3104dc71cc9fc308364d97b4df6e4bff5f965f8e
+  tag: v0.0.6
   specs:
-    spree_flutterwave (0.0.5)
+    spree_flutterwave (0.0.6)
       flutterwave_sdk
       httparty
       spree (>= 4.4.0)
