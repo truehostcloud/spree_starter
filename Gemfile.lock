@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree_multi_vendor
-  revision: 0c8010e9184b4dbdbcd910f1207c58d8a74f7d9b
+  revision: 2511230f75af47a5fe297889c6a3bcc319575d0c
   branch: main
   specs:
     spree_multi_vendor (2.3.0)
