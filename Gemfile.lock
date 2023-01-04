@@ -72,7 +72,7 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree_multi_vendor
-  revision: 0c8010e9184b4dbdbcd910f1207c58d8a74f7d9b
+  revision: 2511230f75af47a5fe297889c6a3bcc319575d0c
   branch: main
   specs:
     spree_multi_vendor (2.3.0)
@@ -277,7 +277,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    deface (1.8.2)
+    deface (1.9.0)
       actionview (>= 5.2)
       nokogiri (>= 1.6)
       polyglot
