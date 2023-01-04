@@ -1,6 +1,6 @@
 module Spree::Api::V2::Platform::ProductsControllerDecorator
   def spree_permitted_attributes
-    super.push(:price)
+    super.push(:price,:taxon_ids)
   end
 end
 
