@@ -277,7 +277,7 @@ GEM
       activerecord (>= 5.a)
       database_cleaner-core (~> 2.0.0)
     database_cleaner-core (2.0.1)
-    deface (1.9.0)
+    deface (1.8.2)
       actionview (>= 5.2)
       nokogiri (>= 1.6)
       polyglot
