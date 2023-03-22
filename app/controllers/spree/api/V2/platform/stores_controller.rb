@@ -5,6 +5,10 @@ module Spree
         class StoresController < ResourceController
           private
 
+          def spree_permitted_attributes
+            super.select { |attribute| attribute != "code"}
+          end
+
           def model_class
             Spree::Store
           end
