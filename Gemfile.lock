@@ -51,10 +51,10 @@ GIT
 
 GIT
   remote: https://github.com/truehostcloud/spree_flutterwave.git
-  revision: 4247909b235f6acca2b2cd363562d95bcd451c10
-  tag: v1.0.0
+  revision: ceead9a7a100dfddf7a3e73d59c549c5ee400251
+  tag: v1.0.1
   specs:
-    spree_flutterwave (0.0.8)
+    spree_flutterwave (1.0.1)
       flutterwave_sdk
       httparty
       spree (>= 4.4.0)
