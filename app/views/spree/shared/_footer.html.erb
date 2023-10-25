@@ -84,5 +84,7 @@
     <% if current_store.contact_phone&.present? %>
       <%= render 'spree/shared/whatsapp' %>
     <% end %>
+    <%= javascript_include_tag ENV['MAUTIC_HOST']+ "/focus/1.js", async: true %>
+    <%= javascript_include_tag ENV['MAUTIC_HOST']+ "/focus/2.js" , async: true %>
   </footer>
 <% end %>
